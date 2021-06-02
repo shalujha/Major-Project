@@ -1,0 +1,66 @@
+body{
+    background-color:#e4efe7;
+}
+.card{
+    width:50%;
+    margin:5% auto;
+    height:40rem;
+    /*
+    overflow-y: auto;
+    */
+    font-family: 'Open Sans Condensed', sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.icon{
+    color:#7868e6;
+    font-size: 2rem;
+    margin-right: 2%;
+}
+.card-body{
+    padding: 2%;
+    overflow-y: auto;
+    max-height: 35rem;
+}
+.scroller{
+    overflow-y: auto;
+}
+.card-header{
+    font-weight:bolder;
+}
+.left{
+    padding: 2%;
+    float: left;
+    background-color: #8F8BE8;
+    border-radius: 10px;
+    border: 2px solid black;
+    clear: both;
+}
+.left_tag{
+    float: left;
+    margin-bottom: 0;
+    clear: both;
+    font-family: 'Reggae One', cursive;
+    font-size: 1.5rem;
+}
+.right_tag{
+    float: right;
+    margin-bottom: 0;
+    clear: both;
+    font-family: 'Reggae One', cursive;
+    font-size: 1.5rem;
+}
+.card-footer{
+    text-align:center;
+}
+.right{
+   float: right;
+   padding: 2%;
+   background-color: #e9e8fd;
+   border-radius: 10px;
+   border: 2px solid black;
+   clear: both;
+}
+.textbox{
+   max-height: auto;
+   max-width: auto;
+}

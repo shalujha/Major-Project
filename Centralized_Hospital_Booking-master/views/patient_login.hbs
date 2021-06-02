@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<link rel="stylesheet" type="text/css" href="/css/login.css"  >
+</head>
+<body>
+{{>header}}
+<div class="login">
+<h1>PATIENT LOGIN</h1>
+<form action="/patient_page" method="post">
+ <b>Email:</b>
+  <input type="email" name="email" required><br>
+  <b>Password:</b>
+  <input type="password" name="password" required><br>
+  <input type="submit" value="Login" class="btn btn-primary btn-block btn-large">
+</form>
+</div>
+</body>
+</html>

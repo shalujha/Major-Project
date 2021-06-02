@@ -1,0 +1,39 @@
+.card{
+    width:50%;
+    margin:0 auto;
+    height:40rem;
+    overflow-y: auto;
+    overflow-x:hidden;
+}
+.container{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+.card-header{
+    font-weight:bold;
+}
+.left{
+    padding: 2%;
+    float: left;
+    background-color: #b8b5ff;
+    border-radius: 10px;
+    border: 2px solid black;
+    clear: both;
+}
+.card-footer{
+    text-align:center;
+    padding:2%;
+}
+.right{
+   float: right;
+   padding: 2%;
+   background-color: #7868e6;
+   border-radius: 10px;
+   border: 2px solid black;
+   clear: both;
+}
+.textbox{
+    display:inline;
+    width:85%;
+    margin-right:2%;
+}

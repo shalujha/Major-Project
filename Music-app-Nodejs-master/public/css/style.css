@@ -1,0 +1,207 @@
+.navbar-brand {
+  font-size: 30px;
+  font-family: 'Bungee Inline', cursive;
+  color: rgb(206, 209, 46) !important;
+}
+nav li {
+  font-family: 'Bungee Inline', cursive;
+}
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(134, 25, 25, 0.54),rgba(55, 54, 54, 0.6)),url("/img/one.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+#index {
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  padding: 50px;
+  color: whitesmoke;
+}
+.header h1 {
+  font-size: 70px;
+  margin-top: 50px;
+}
+.header #hico {
+  font-size: 70px;
+  width: 15%;
+  margin-bottom: 50px;
+}
+.header p {
+  font-size: 26px;
+}
+.header i:hover {
+  color: rgb(46, 209, 136);
+}
+.reg {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  padding: 80px 0 80px;
+  font-family: 'Poiret One', cursive;
+  font-weight: bolder;
+}
+.reg h1 {
+  font-size: 50px;
+}
+.reg p {
+  font-size: 22px;
+}
+.reg .btn{
+  color: black;
+  font-weight: bolder;
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: center;
+}
+.reg .btn:hover{
+  background-color: rgb(236, 126, 169);
+}
+.reg img {
+  width: 400px;
+}
+.reg label {
+  font-size: 20px;
+}
+.log {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(54, 54, 51, 0.68),rgba(80, 76, 76, 0.68)),url('/img/log.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: whitesmoke;
+  padding: 80px 0 80px;
+  font-family: 'Poiret One', cursive;
+  font-weight: bolder;
+}
+.log h1 {
+  font-size: 50px;
+}
+.log p {
+  font-size: 22px;
+}
+.log .btn{
+  color: black;
+  font-weight: bolder;
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: center;
+}
+.log .btn:hover{
+  background-color: rgb(236, 126, 169);
+}
+.log label {
+  font-size: 20px;
+}
+.log img {
+  width: 500px;
+}
+.play {
+  width: 100%;
+  height: 100vh;
+  background-color: lightblue;
+  padding: 80px 0 80px;
+  font-family: 'Poiret One', cursive;
+  font-weight: bolder;
+}
+.play .img {
+  width: 200px;
+  height: 200px;
+  background-color: lightgray;
+  margin: 0px auto;
+  margin-bottom: 20px;
+}
+.play button {
+  margin-top: 20px;
+}
+.play .profile-img {
+width:180px;
+height:180px;
+border:1px solid #eee;
+margin:20px;
+}
+
+.play .image-preview-input-title {
+    margin-left:2px;
+}
+.play .image-preview-input {
+    position: relative;
+    overflow: hidden;
+    margin: 0px;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+.play .image-preview-input input[type=file] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+.play #enter {
+  font-size: 36px;
+  text-transform: capitalize;
+  font-weight: bolder;
+  text-shadow:  0 0 5px gray;
+}
+
+.cont {
+  width: 100%;
+  height: 100vh;
+  background-color: lightblue;
+  padding: 80px 0 80px;
+  font-family: monospace;
+  font-weight: bolder;
+}
+.cont p {
+  margin-bottom: 40px;
+}
+.cont button {
+  margin-top: 30px;
+}
+.cont i {
+  font-size: 370px;
+  padding-left: 60px;
+}
+.cont h2, h4 {
+  text-align: center;
+}
+
+#two {
+  display: none;
+}
+.about {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(154, 154, 154, 0.68),rgba(26, 24, 24, 0.68)),url('/img/about.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: whitesmoke;
+  padding: 80px 0 80px;
+  font-family: 'Poiret One', cursive;
+  font-weight: bolder;
+  text-align: center;
+}
+.about p {
+  font-size: 20px;
+  padding: 10px;
+}
+.play #here {
+  width: 50%;
+  margin-left: 25%;
+}
+.play label {
+  font-size: 30px;
+}
+.play button {
+  margin-left: 25%;
+}

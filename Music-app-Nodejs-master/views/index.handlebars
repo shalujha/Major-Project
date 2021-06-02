@@ -1,0 +1,38 @@
+<div class="header" id="header">
+  <div class="container" id="index">
+    <div class="row">
+      <div class="col-md-12 col-xs-12">
+        <h1>PEACE  LOVE  TRANCE</h1>
+        <i class="fa fa-hand-peace-o" aria-hidden="true" id="hico"></i>
+        <i class="fa fa-heart-o" aria-hidden="true" id="hico"></i>
+        <i class="fa fa-music" aria-hidden="true" id="hico"></i>
+          <p>
+            Play the Moments
+            <i class="fa fa-play" aria-hidden="true"></i>
+          </p>
+          <p>
+            Pause the Memories
+            <i class="fa fa-pause" aria-hidden="true"></i>
+          </p>
+          <p>
+            Stop the Pain
+            <i class="fa fa-stop" aria-hidden="true"></i>
+          </p>
+          <p>
+            Rewind the Happiness
+            <i class="fa fa-backward" aria-hidden="true"></i>
+          </p>
+          
+          {{#if success_msg}}
+              <div class="alert alert-success">{{success_msg}}</div>
+          {{/if}}
+          {{#if error_msg}}
+              <div class="alert alert-danger">{{error_msg}}</div>
+          {{/if}}
+          {{#if error}}
+              <div class="alert alert-danger">{{error}}</div>
+          {{/if}}
+      </div>
+    </div>
+  </div>
+</div>

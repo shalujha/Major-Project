@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HospitalAppointment</title>
+<link rel="stylesheet" type="text/css" href="/css/receipt.css">
+</head>
+<body>
+{{>header}}
+<div class="center">
+<h1>PROFILE</h1>
+<table id="table">
+<tr>
+<td id="first">ID</td>
+<td>{{details.hid}}</td>
+</tr>
+<tr>
+<td id="first"> Name</td>
+<td>{{details.name}}</td>
+</tr>
+<tr>
+<td id="first">Address</td>
+<td>{{details.address}}</td>
+</tr>
+<tr>
+<td id="first">Type</td>
+<td>{{details.type}}</td>
+</tr>
+<tr>
+<td id="first">Contact</td>
+<td>{{details.Contact}}</td>
+</tr>
+</table>
+<button><a href ='/hospital_page' >Go Back</a></button>
+</div>
+</body>
+</html>

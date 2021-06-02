@@ -1,0 +1,232 @@
+.userSettings__ {
+    margin-top: 50px;
+    border-radius: 5px;
+    min-height: 90vh;
+    padding: 40px;
+
+    .userSettings__buttons {
+        width: fit-content !important;
+    }
+
+    .userSettings__IconsSettings {
+        display: flex;
+
+        .userSettings__AccountButton,
+        .userSettings__SecurityButton {
+            display: flex !important;
+            justify-content: flex-start !important;
+            align-items: center !important;
+            border-radius: 0px !important;
+            box-shadow: none !important;
+            padding: 10px 100px 10px 10px;
+        }
+
+        .userSettings__AccountButton {
+            background: transparent;
+            font-size: 20px;
+            font-weight: 700;
+            color: #2F3179;
+            transition: 150ms ease-in-out !important;
+
+            .PersonIcon__ {
+                margin-bottom: 3px !important;
+                margin-right: 5px;
+            }
+        }
+
+        .userSettings__SecurityButton {
+            background: transparent;
+            font-size: 20px;
+            font-weight: 700;
+            color: #2F3179;
+            transition: 350ms ease-in-out !important;
+
+            .LockIcon__ {
+                font-size: 25px !important;
+                margin-bottom: 3px;
+                margin-right: 5px;
+            }
+        }
+
+        .userSettings__AccountButton.active {
+            background: #2F3179;
+            color: #fff;
+        }
+
+        .userSettings__SecurityButton.active {
+            background: #2F3179;
+            color: #fff;
+
+        }
+    }
+
+    .userSettings__Account {
+        width: 100% !important;
+        min-height: 70vh;
+        padding: 20px 60px;
+        border-left: 2px solid #2F3179;
+    }
+
+    .userSettings__AccountSettingsText {
+        color: #2F3179;
+        font-size: 50px;
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+
+    .AccountSettings__SpanFirst {
+        font-weight: 600;
+        color: #2F3179;
+        font-size: 20px;
+    }
+
+    .userSettings__Title {
+        h1 {
+            color: #2F3179;
+            font-size: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #2F3179;
+        }
+    }
+
+    .AccountSettings__Labels {
+        margin-bottom: 5px !important;
+        font-weight: 700;
+        color: #2F3179;
+    }
+
+    .AccountSettings__Names {
+        display: flex;
+
+        .FirstName__ {
+            width: 100% !important;
+        }
+
+        .LastName__ {
+            width: 100% !important;
+        }
+
+        .TextFields__ {
+            width: 100% !important;
+            padding-right: 20px;
+        }
+
+    }
+
+    .AccountSettings__EmailInput {
+        margin-top: 40px !important;
+
+        .TextFields__ {
+            width: 100% !important;
+            padding-right: 20px;
+        }
+    }
+
+    .AccountSettings_ButtonSaveChanges {
+        .AccountSettings__Button {
+            background: #7733FF;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 700;
+            border-radius: 5px !important;
+            width: fit-content;
+            padding: 10px 20px;
+            margin-top: 50px;
+            border: 2px solid #EAEEF2;
+            transition: 350ms ease;
+
+            .Icon__Save {
+                display: none;
+            }
+        }
+
+        .AccountSettings__Button:hover {
+            background: #fff;
+            color: #7733FF;
+            border: 2px solid #7733FF;
+        }
+
+
+    }
+
+    .AccountSettings__Failed {
+        position: fixed;
+        bottom: 50px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .Span__ {
+        display: none !important;
+    }
+
+    .userSettings__buttons {
+        max-width: 65px !important;
+
+    }
+
+
+    .userSettings__AccountButton,
+    .userSettings__SecurityButton {
+        text-align: center !important;
+        padding: 10px 17px !important;
+    }
+
+    .AccountSettings__Names {
+        display: block !important;
+    }
+
+    .AccountSettings__Labels {
+        margin-top: 35px !important;
+    }
+
+    .AccountSettings__SpanFirst {
+        display: none !important;
+    }
+
+    .userSettings__AccountSettingsText {
+        display: none !important;
+    }
+
+    .userSettings__Account {
+        padding: 0px 20px !important;
+    }
+
+    .Save__Icon {
+        display: block !important;
+    }
+
+    .AccountSettings__Button {
+        span:nth-child(2) {
+            display: none;
+        }
+    }
+
+    .Icon__Save {
+        display: block !important;
+    }
+
+    .userSettings__Title {
+        h1 {
+            font-size: 30px !important;
+        }
+
+        span {
+            display: none !important;
+        }
+    }
+
+    .userSettings__ {
+        padding: 0px !important;
+    }
+}
+
+.Visibility__Icon {
+    position: absolute !important;
+    top: 15px !important;
+    right: 30px;
+    cursor: pointer;
+    z-index: 5;
+}

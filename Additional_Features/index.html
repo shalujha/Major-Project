@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      
+      <script type="text/javascript" src="https://codesandbox.io/public/sse-hooks/sse-hooks.f648b14c15c640a14a557113a991cb8d.js"></script>
+      <script type="text/javascript" src="https://codesandbox.io/static/js/banner.be879265d.js"></script>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Card Layout with CSS Grid</title>
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap" rel="stylesheet">  
+        <link rel="stylesheet" href=".\style.css">
+        <style type="text/css">.ncf-container-otsledit {
+          font-size: 14px!important;
+          box-sizing: border-box!important;
+          position: fixed!important;
+          z-index: 999999!important;
+          text-align: left!important;
+      }
+      
+      .ncf-container-otsledit.nfc-top-left-otsledit {
+          top: 12px!important;
+          left: 12px!important;
+      }
+      
+      .ncf-container-otsledit.nfc-top-right-otsledit {
+          top: 12px!important;
+          right: 12px!important;
+      }
+      
+      .ncf-container-otsledit.nfc-bottom-right-otsledit {
+          bottom: 12px!important;
+          right: 12px!important;
+      }
+      
+      .ncf-container-otsledit.nfc-bottom-left-otsledit {
+          bottom: 12px!important;
+          left: 12px!important;
+      }
+      
+      .ncf-container-otsledit .ncf-otsledit {
+          background: #fff;
+          transition: .3s ease!important;
+          position: relative!important;
+          pointer-events: auto!important;
+          overflow: hidden!important;
+          margin: 0 0 6px!important;
+          width: 300px!important;
+          border-radius: 3px 3px 3px 3px!important;
+          box-shadow: 0 0 12px #999!important;
+          color: #000!important;
+          opacity: .9!important;
+          -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90)!important;
+          filter: alpha(opacity=90)!important;
+          background-position: 15px !important;
+          background-repeat: no-repeat !important;
+          -webkit-user-select: none!important;
+          -moz-user-select: none!important;
+          -ms-user-select: none!important;
+          user-select: none!important;
+      }
+      
+      .ncf-container-otsledit .ncf-otsledit:hover {
+          box-shadow: 0 0 12px #000;
+          opacity: 1;
+          cursor: pointer
+      }
+      
+      .ncf-container-otsledit .ncf-otsledit .ncf-title-otsledit {
+          font-weight: 700;
+          font-size: 16px;
+          text-align: left;
+          margin-top: 0;
+          margin-bottom: 6px;
+          color: #fff!important;
+          word-wrap: break-word
+      }
+      
+      .ncf-container-otsledit .ncf-otsledit .nfc-message-otsledit {
+          margin: 0;
+          text-align: left!important;
+          word-wrap: break-word
+      }
+      
+      .ncf-container-otsledit .success-otsledit {
+          background: #51a351;
+          color: #fff;
+          padding: 15px 15px 15px 50px;
+          background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADsSURBVEhLY2AYBfQMgf///3P8+/evAIgvA/FsIF+BavYDDWMBGroaSMMBiE8VC7AZDrIFaMFnii3AZTjUgsUUWUDA8OdAH6iQbQEhw4HyGsPEcKBXBIC4ARhex4G4BsjmweU1soIFaGg/WtoFZRIZdEvIMhxkCCjXIVsATV6gFGACs4Rsw0EGgIIH3QJYJgHSARQZDrWAB+jawzgs+Q2UO49D7jnRSRGoEFRILcdmEMWGI0cm0JJ2QpYA1RDvcmzJEWhABhD/pqrL0S0CWuABKgnRki9lLseS7g2AlqwHWQSKH4oKLrILpRGhEQCw2LiRUIa4lwAAAABJRU5ErkJggg==");
+      }
+      
+      .ncf-container-otsledit a {
+          color: #fff!important;
+          text-align: left!important;
+      
+      }
+      </style>
+    </head>
+    <body>
+      <body>
+        <main>
+          <section class="cards">
+            <div class="card">
+              <div class="card__image-container">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Detailed image description would go here.">
+              </div>
+              <div class="card__content">
+                <p class="card__title text--medium">
+                  Here's the Title of an Awesome Course
+                </p>
+                <div class="card__info">
+                  <p class="text--medium">30 Min</p>
+                  <p class="card__price text--medium">Free</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__image-container">
+                <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Detailed image description would go here.">
+              </div>
+              <div class="card__content">
+                <p class="card__title text--medium">
+                  Here's the Title of an Awesome Course
+                </p>
+                <div class="card__info">
+                  <p class="text--medium">30 Min</p>
+                  <p class="card__price text--medium">Free</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__image-container">
+                <img src="https://images.unsplash.com/photo-1473283147055-e39c51463929?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Detailed image description would go here.">
+              </div>
+              <div class="card__content">
+                <p class="card__title text--medium">
+                  Here's the Title of an Awesome Course
+                </p>
+                <div class="card__info">
+                  <p class="text--medium">30 Min</p>
+                  <p class="card__price text--medium">Free</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__image-container">
+                <img src="https://images.unsplash.com/photo-1482784160316-6eb046863ece?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Detailed image description would go here.">
+              </div>
+              <div class="card__content">
+                <p class="card__title text--medium">
+                  Here's the Title of an Awesome Course
+                </p>
+                <div class="card__info">
+                  <p class="text--medium">30 Min</p>
+                  <p class="card__price text--medium">Free</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__image-container">
+                <img src="https://images.unsplash.com/photo-1470104240373-bc1812eddc9f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Detailed image description would go here.">
+              </div>
+              <div class="card__content">
+                <p class="card__title text--medium">
+                  Here's the Title of an Awesome Course
+                </p>
+                <div class="card__info">
+                  <p class="text--medium">30 Min</p>
+                  <p class="card__price text--medium">Free</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__image-container">
+                <img src="https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Detailed image description would go here.">
+              </div>
+              <div class="card__content">
+                <p class="card__title text--medium">
+                  Here's the Title of an Awesome Course
+                </p>
+                <div class="card__info">
+                  <p class="text--medium">30 Min</p>
+                  <p class="card__price text--medium">Free</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__image-container">
+                <img src="https://images.unsplash.com/photo-1534143046043-44af3469836b?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Detailed image description would go here.">
+              </div>
+              <div class="card__content">
+                <p class="card__title text--medium">
+                  Here's the Title of an Awesome Course
+                </p>
+                <div class="card__info">
+                  <p class="text--medium">30 Min</p>
+                  <p class="card__price text--medium">Free</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__image-container">
+                <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Detailed image description would go here.">
+              </div>
+              <div class="card__content">
+                <p class="card__title text--medium">
+                  Here's the Title of an Awesome Course
+                </p>
+                <div class="card__info">
+                  <p class="text--medium">30 Min</p>
+                  <p class="card__price text--medium">Free</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__image-container">
+                <img src="https://images.unsplash.com/photo-1465056836041-7f43ac27dcb5?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Detailed image description would go here.">
+              </div>
+              <div class="card__content">
+                <p class="card__title text--medium">
+                  Here's the Title of an Awesome Course
+                </p>
+                <div class="card__info">
+                  <p class="text--medium">30 Min</p>
+                  <p class="card__price text--medium">Free</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      
+    
+    </body>
+         </body>
+</html>

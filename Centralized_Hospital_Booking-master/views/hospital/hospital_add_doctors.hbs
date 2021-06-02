@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HospitalAppointment</title>
+<link rel="stylesheet" type="text/css" href="/css/set_appointment.css">
+</head>
+<body>
+{{>header}}
+<div class="center">
+<h1>ADD DOCTOR</h1>
+<form action="/doctorsAdded" method="post">
+ <b>id:</b><br>
+  <input type="number" name="did" required><br>
+  <b>Name:</b><br>
+  <input type="text" name="name" required><br>
+  <b>Department:</b><br>
+  <select name ="department" class="select_form">
+{{#each dropdown}}
+<option value ="{{id}}">{{id}}. {{name}}</option>
+{{/each}}
+</select>
+<br>
+  <b>Fee:</b><br>
+  <input type=number name="fee" required><br>
+<b> Temporary Password:</b><br>
+  <input type="text" name="password" required><br>
+  <input type="submit" value="Add doctor" class="next">
+</form>
+</div>
+</body>
+</html>

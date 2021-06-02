@@ -1,0 +1,9 @@
+.text-style{
+  margin: 2%;
+}
+.text-visibility{
+  display: none;
+}
+.text-visibility2{
+  visibility: visible;
+}

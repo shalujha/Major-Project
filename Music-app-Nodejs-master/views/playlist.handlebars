@@ -1,0 +1,20 @@
+<div class="play" id="play">
+  <div class="container-fluid">
+      <h1 class="text-center" id="enter"> Welcome {{user.username}}</h1>
+
+      {{#if success_msg}}
+          <div class="alert alert-success">{{success_msg}}</div>
+      {{/if}}
+      {{#if error_msg}}
+          <div class="alert alert-danger">{{error_msg}}</div>
+      {{/if}}
+      {{#if error}}
+          <div class="alert alert-danger">{{error}}</div>
+      {{/if}}
+      <div class="well">
+        <h1>Sorry, Unfortunately Music API is undergoing futher changes,
+        <br />
+      will be back in a week </h1>
+      </div>
+  </div>
+</div>

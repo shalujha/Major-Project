@@ -1,0 +1,50 @@
+<div class="reg" id="reg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-xs-12 col-lg-6">
+        <h1>Get Registered.</h1>
+        <p>
+          One Source For all Your Music.
+        </p>
+        <p>
+          Make Everything Organized.
+        </p>
+        <p>
+          Add and Play to Your Mood.
+        </p>
+        <img src="/img/note.jpg" alt="music" />
+      </div>
+      <div class="col-md-6 col-xs-12 col-lg-6">
+        {{#if errors}}
+          {{#each errors}}
+            <div class="alert alert-danger">{{msg}}</div>
+          {{/each}}
+        {{/if}}
+        
+        <form method="post" action="/users/register">
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" class="form-control" name="name" placeholder="Enter Full Name">
+          </div>
+          <div class="form-group">
+            <label>User Name</label>
+            <input type="text" class="form-control" name="username" placeholder="Enter User Name">
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control" name="email" placeholder="Email Address">
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" name="password" placeholder="Enter Password">
+          </div>
+          <div class="form-group">
+            <label>Confirm Password</label>
+            <input type="password" class="form-control" name="password2" placeholder="Confirm Password">
+          </div>
+          <button type="submit" class="btn tbn-default">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

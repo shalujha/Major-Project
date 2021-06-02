@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <title>Task</title>
+</head>
+
+<body>
+
+
+<!--  <div class="row first-row">
+    <div class="col-lg-4 heading first ">
+      <i class="fab fa-twitter icon"></i>B101 Mumbai Branch
+    </div>
+    <div class="col-lg-4 heading  second ">
+      Credit Analytics Dashboard
+    </div>
+    <div class="col-lg-4 heading third">
+      10-Nov-2020
+    </div>
+  </div> -->
+
+  <div class="first-row">
+    <span class="first-heading"><i class="fab fa-twitter icon"></i>B101 Mumbai Branch</span>
+    <span class="second-heading">Credit Analytics Dashboard</span>
+    <span class="third-heading">10-Nov-2020</span>
+  </div>
+
+
+  <div class="row second-row">
+    <div class="col-lg-3">
+      <div class="card first-card">
+        <div class="container">
+          <p>Gross NPA <span class="tab_for_icon"><i class="fas fa-external-link-square-alt icon-in-card"></i></span>
+          <p>
+          <p>4.1</p>
+          <p><span class="highlight">+8.1%</span><span class="tab last_word">YoY</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="card first-card">
+        <div class="container">
+          <p>SMA2<span class="tab_for_icon"><i class="fas fa-external-link-square-alt icon-in-card"></i></span>
+          <p>
+          <p>10.1</p>
+          <p><span class="highlight">+3.1%</span><span class="tab last_word">YoY</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="card first-card">
+        <div class="container">
+          <p>SMA1<span class="tab_for_icon"><i class="fas fa-external-link-square-alt icon-in-card"></i></span>
+          <p>
+          <p>13.6</p>
+          <p><span class="highlight">+6.8%</span><span class="tab last_word">YoY</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="card first-card">
+        <div class="container">
+          <p>Recoveries<span class="tab_for_icon"><i class="fas fa-external-link-square-alt icon-in-card"></i></span>
+          <p>
+          <p>3.25</p>
+          <p><span class="highlight">+6.1%</span><span class="tab last_word">YoY</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row third-row">
+    <div class="col-lg-6">
+      <div class="card second-card" id="chartContainer1" style="height: 300px; width:100%">
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="card second-card" id="chartContainer" style="height: 300px; width:100%" >
+      </div>
+    </div>
+
+  </div>
+  <div class="row fourth-row heading">
+    <div class="col-lg-4">
+      <div class="card third-card white">
+        <p class="white heading paragraph-style"><b>New NPA Accounts</b></p>
+        <table style="width:100%">
+          <tr class="white table-row">
+            <th class="first first-row-table">Customer Name</th>
+            <th class="second first-row-table">Days Overdue</th>
+            <th class="third first-row-table">Amount Outstanding</th>
+          </tr>
+          <tr class="gray table-row">
+            <td class="first">ABCD</td>
+            <td class='second'>135</td>
+            <td class="third">4576</td>
+          </tr>
+          <tr class="white table-row">
+            <td class="first">EFGH</td>
+            <td class='second'>128</td>
+            <td class="third">4218</td>
+          </tr>
+          <tr class="gray table-row">
+            <td class="first">JKL</td>
+            <td class='second'>95</td>
+            <td class="third">1905</td>
+          </tr>
+          <tr class="white table-row">
+            <td class="first">MNOP</td>
+            <td class='second'>132</td>
+            <td class="third">3517</td>
+          </tr>
+          <tr class="gray table-row">
+            <td class="first">QRST</td>
+            <td class='second'>132</td>
+            <td class="third">3517</td>
+          </tr>
+          <tr class="white table-row">
+            <td class="first">UVWX</td>
+            <td class='second'>132</td>
+            <td class="third">3517</td>
+            </tr>
+        </table>
+
+      </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="card third-card white">
+          <p class="white heading paragraph-style"><b>NPA Accounts with Recoveries</b></p>
+          <table style="width:100%">
+            <tr class="white table-row">
+              <th class="first first-row-table">Customer Name</th>
+              <th class="second first-row-table">Recovery</th>
+              <th class="third first-row-table">Amount Outstanding</th>
+            </tr>
+            <tr class="gray table-row">
+              <td class="first">ABCPQR</td>
+              <td class='second'>135</td>
+              <td class="third">4576</td>
+            </tr>
+            <tr class="white table-row">
+              <td class="first">DEFSTU</td>
+              <td class='second'>128</td>
+              <td class="third">4218</td>
+            </tr>
+            <tr class="gray table-row">
+              <td class="first">GHIVWX</td>
+              <td class='second'>95</td>
+              <td class="third">1905</td>
+            </tr>
+            <tr class="white last-row">
+              <td class="first">JKLYZ</td>
+              <td class='second'>132</td>
+              <td class="third">3517</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    <div class="col-lg-4">
+        <div class="card third-card white">
+          <p class="white heading paragraph-style"><b>New SMA Accounts</b></p>
+          <table style="width:100%">
+            <tr class="white table-row">
+              <th class="first first-row-table">Customer Name</th>
+              <th class="second first-row-table">Days Overdue</th>
+              <th class="third first-row-table">Amount Outstanding</th>
+            </tr>
+            <tr class="gray table-row">
+              <td class="first">ABC123</td>
+              <td class='second'>135</td>
+              <td class="third">4576</td>
+            </tr>
+            <tr class="white table-row">
+              <td class="first">DEF456</td>
+              <td class='second'>128</td>
+              <td class="third">4218</td>
+            </tr>
+            <tr class="gray table-row">
+              <td class="first">GH789</td>
+              <td class='second'>95</td>
+              <td class="third">1905</td>
+            </tr>
+            <tr class="white table-row">
+              <td class="first">JKL123</td>
+              <td class='second'>132</td>
+              <td class="third">3517</td>
+            </tr>
+            <tr class="gray table-row">
+              <td class="first">MNO456</td>
+              <td class='second'>132</td>
+              <td class="third">3517</td>
+            </tr>
+            <tr class="white table-row">
+              <td class="first">TUV789</td>
+              <td class='second'>132</td>
+              <td class="third">3517</td>
+              </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src=".\index.js"></script>
+</body>
+
+</html>

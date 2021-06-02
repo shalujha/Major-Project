@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style2.css" />
+    <title>CSS GRID DASHBOARD</title>
+  </head>
+  <body id="body">
+    <div class="container">
+      <nav class="navbar">
+        <div class="nav_icon" onclick="toggleSidebar()">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        
+      </nav>
+
+      <main>
+        <div class="main__container">
+          <!-- MAIN TITLE STARTS HERE -->
+
+          <div class="main__title">
+            <div class="main__greeting">
+              <h1 class="heading-text">Meditative Body</h1>
+            </div>
+          </div>
+
+          <!-- MAIN TITLE ENDS HERE -->
+
+          <!-- MAIN CARDS STARTS HERE -->
+          <div class="main__cards">
+            <div class="card zoom">
+              <div class="card-image">
+       <iframe src="https://www.youtube.com/embed/lCOF9LN_Zxs" allow="fullscreen">
+       </iframe>
+              </div>
+            </div>
+
+            <div class="card zoom">
+              <div class="card-image">
+       <iframe src="https://www.youtube.com/embed/8ADF3Km_X0Y" allow="fullscreen">
+       </iframe>
+              </div>
+            </div>
+
+            <div class="card zoom">
+              <div class="card-image">
+       <iframe src="https://www.youtube.com/embed/4zqKJBxRyuo" allow="fullscreen">
+       </iframe>
+              </div>
+            </div>
+            <div class="card zoom">
+              <div class="card-image">
+       <iframe src="https://www.youtube.com/embed/rCSCPujLs14" allow="fullscreen">
+       </iframe>
+              </div>
+            </div>
+          </div>
+          <div class="main__cards">
+            <div class="card zoom">
+              <div class="card-image">
+       <iframe src="https://www.youtube.com/embed/FaRrq7cYu84" allow="fullscreen">
+       </iframe>
+              </div>
+            </div>
+
+            <div class="card zoom">
+              <div class="card-image">
+       <iframe src="https://www.youtube.com/embed/Xm4l0GX7iVk" allow="fullscreen">
+       </iframe>
+              </div>
+            </div>
+
+            <div class="card zoom">
+              <div class="card-image">
+                <iframe src="https://www.youtube.com/embed/85oNYmzUUcE" allow="fullscreen">
+       </iframe>
+              </div>
+            </div>
+
+            <div class="card zoom">
+              <div class="card-image">
+       <iframe src="https://www.youtube.com/embed/TKqv5ekBjI0" allow="fullscreen">
+       </iframe>
+              </div>
+            </div>
+          </div>
+          <div class="main__cards">
+            <div class="card zoom">
+              <div class="card-image">
+       <iframe src="https://www.youtube.com/embed/lCOF9LN_Zxs" allow="fullscreen">
+       </iframe>
+              </div>
+            </div>
+
+            <div class="card zoom">
+              <div class="card-image">
+       <iframe src="https://www.youtube.com/embed/8ADF3Km_X0Y" allow="fullscreen">
+       </iframe>
+              </div>
+            </div>
+
+            <div class="card zoom">
+              <div class="card-image">
+       <iframe src="https://www.youtube.com/embed/4zqKJBxRyuo" allow="fullscreen">
+       </iframe>
+              </div>
+            </div>
+            <div class="card zoom">
+              <div class="card-image">
+       <iframe src="https://www.youtube.com/embed/TKqv5ekBjI0" allow="fullscreen">
+       </iframe>
+              </div>
+            </div>
+          </div>
+          <div class="main__cards">
+            <div class="card zoom">
+              <div class="card-image">
+       <iframe src="https://www.youtube.com/embed/FaRrq7cYu84" allow="fullscreen">
+       </iframe>
+              </div>
+            </div>
+
+            <div class="card zoom">
+              <div class="card-image">
+       <iframe src="https://www.youtube.com/embed/Xm4l0GX7iVk" allow="fullscreen">
+       </iframe>
+              </div>
+            </div>
+
+            <div class="card zoom">
+              <div class="card-image">
+                <iframe src="https://www.youtube.com/embed/85oNYmzUUcE" allow="fullscreen">
+       </iframe>
+              </div>
+            </div>
+
+            <div class="card zoom">
+              <div class="card-image">
+       <iframe src="https://www.youtube.com/embed/TKqv5ekBjI0" allow="fullscreen">
+       </iframe>
+              </div>
+            </div>
+          </div>
+          
+          <!-- MAIN CARDS ENDS HERE -->
+          
+          <!-- CHARTS STARTS HERE -->
+          
+          <!-- CHARTS ENDS HERE -->
+      
+      </main>
+
+      <div id="sidebar">
+        <div class="sidebar__title">
+          <div class="sidebar__img">
+            <h1>Meditative</h1>
+          </div>
+          <i
+            onclick="closeSidebar()"
+            class="fa fa-times"
+            id="sidebarIcon"
+            aria-hidden="true"
+          ></i>
+        </div>
+
+        <div class="sidebar__menu">
+          <div class="sidebar__link ">
+            <i class="fa fa-home"></i>
+            <a href="/fun">Home</a>
+          </div>
+          <h2>MNG</h2>
+          <div class="sidebar__link">
+            <a href="/sleep">Sleep</a>
+          </div>
+          <div class="sidebar__link">
+            <a href="/music">Music</a>
+          </div>
+          <div class="sidebar__link active_menu_link">
+            <a href="/body">Body</a>
+          </div>
+          <div class="sidebar__link">
+            <a href="/meditate">Meditate</a>
+          </div>
+          <div class="sidebar__link">
+            <a href="/scenes">Scenes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,467 @@
+.Home__ImageWave {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.Home__Buttons {
+  margin-top: 20px;
+
+  .Home__GetStarted {
+    background: #7733ff !important;
+    padding: 10px 25px !important;
+    font-weight: 700 !important;
+    font-size: 18px !important;
+    transition: 500ms ease;
+    border: 2px solid #7e2eff !important;
+  }
+
+  .Home__PlayCircle {
+    margin-right: 10px !important;
+    font-size: 25px;
+  }
+
+  .Home__LogIn {
+    background: #ffff !important;
+    padding: 10px 30px !important;
+    font-weight: 700 !important;
+    font-size: 18px !important;
+    border: 2px solid #7e2eff;
+    color: #7e2eff;
+    margin-left: 15px;
+    transition: 500ms ease;
+  }
+
+  .Home__GetStarted:hover {
+    background: #ffff !important;
+    border-radius: 0px !important;
+    border: 2px solid #7e2eff;
+    color: #7e2eff;
+  }
+
+  .Home__LogIn:hover {
+    background: #7e2eff !important;
+    font-weight: 700 !important;
+    color: #ffff;
+  }
+}
+
+.Home__Container {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin-top: 100px;
+
+  .Home__Text_Presentation {
+    max-width: 900px;
+
+    h1 {
+      padding: 10px 0px;
+      font-weight: 800;
+      font-size: 60px;
+      color: #252a32;
+    }
+
+    p {
+      font-weight: 600;
+      color: #4d525a;
+      line-height: 40px;
+    }
+  }
+
+  .Home__iPhoneImage {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .Home__GridOne {
+    margin-top: 50px;
+    text-align: right !important;
+  }
+}
+
+.Home__WhySection {
+  margin-top: 150px;
+  text-align: center;
+
+  h1 {
+    color: #252a32;
+  }
+
+  .Home__WhyText {
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+  }
+
+  .Home__firstImage {
+    margin-top: 30px;
+    max-width: 300px;
+    margin-bottom: 10px;
+    border: 3px solid #7e2eff;
+    border-radius: 5px;
+  }
+
+  .Home__secondImage {
+    margin-top: 35px;
+    max-width: 270px;
+    margin-bottom: 10px;
+    border: 3px solid #7e2eff;
+    border-radius: 5px;
+  }
+
+  .Home__thirdImage {
+    max-width: 250px;
+    margin-bottom: 10px;
+    margin-top: 35px;
+    border: 3px solid #7e2eff;
+    border-radius: 5px;
+  }
+}
+
+.Home__SetContactGoal {
+  margin-top: 200px;
+
+  .Home__ImageFluid {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .Home__SetGoalsForHobi {
+    max-width: 550px;
+
+    h1 {
+      margin-bottom: 15px;
+      color: #252a32;
+      font-weight: 700;
+    }
+
+    p {
+      font-weight: 700;
+      color: #4d525a;
+      line-height: 32px;
+    }
+  }
+
+  .Home__paragraph {
+    margin-top: 15px;
+  }
+
+  .Home__ButtonSignUp {
+    margin-top: 15px;
+    background: #7733ff;
+    padding: 10px 50px;
+    font-size: 16px;
+    font-weight: 700;
+    border: 2px solid #7733ff;
+    transition: 350ms ease;
+  }
+
+  .Home__ButtonSignUp:hover {
+    background: #ffff;
+    border: 2px solid #7733ff;
+    color: #7733ff;
+  }
+}
+
+.Home__SectionBenefits {
+  margin-top: 75px;
+
+  .Home__ImageFluid {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.Home__SetYourSelfGoal {
+  .Home__TwitterIcon {
+    margin-left: 10px;
+  }
+
+  h1 {
+    font-size: 35px;
+    color: #252a32;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    margin-top: 5px;
+
+    li {
+      list-style: none;
+      padding-top: 20px;
+    }
+  }
+
+  .Home__icons {
+    margin-right: 10px;
+    color: #7e2eff;
+  }
+
+  .Home__QuoteParagraph {
+    max-width: 500px;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 35px;
+    color: #4d525a;
+  }
+
+  .Home__ListOfGroup {
+    margin-bottom: 40px;
+
+    .Home__UnlistItems {
+      display: flex;
+      font-weight: 600;
+      align-items: center;
+      color: #4d525a;
+    }
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .Home__Container {
+    p {
+      color: #252a32 !important;
+      line-height: 25px !important;
+    }
+
+    .Home__Buttons {
+      .Home__GetStarted {
+        border: 1px solid white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .Home__Container {
+
+    h1 {
+      color: white !important;
+      font-size: 35px !important;
+    }
+
+    p {
+      font-size: 15px;
+      color: white !important;
+      line-height: 25px !important;
+    }
+
+    .Home__iPhoneImage {
+      max-width: 300px;
+    }
+
+    .Home__SectionBenefits {
+      margin-top: 75px;
+
+      .Home__ImageFluid {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+.Home__GetStartedToday {
+  max-width: 100%;
+  margin-top: 50px !important;
+  background: #7733ff;
+
+  h1 {
+    font-size: 70px;
+    color: white;
+  }
+
+  p {
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 5px;
+  }
+
+  Button {
+    font-size: 18px;
+    font-weight: 700;
+    background: white;
+    margin-top: 15px;
+    color: #7733ff;
+    transition: 350ms ease;
+    border: 2px solid #7733ff;
+  }
+
+  Button:hover {
+    background: #7e2eff;
+    color: white;
+    border: 2px solid white;
+  }
+
+  .Home__GetStartediPhone {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.Home__Footer {
+  margin-top: 75px;
+
+  .Home__CopyrightText {
+    margin-top: 75px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #252a32;
+    font-weight: 700;
+    font-size: px;
+  }
+
+  .Home__FooterLogo {
+    margin-bottom: 10px;
+  }
+
+  .Home__FooterLogoInfo {
+    p {
+      font-weight: 700;
+      color: #4d525a;
+      line-height: 35px;
+    }
+  }
+
+  .Home__SocialSection {
+    margin-top: 10px;
+
+    p {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-weight: 700;
+      color: #4d525a;
+    }
+
+    h1 {
+      color: #252a32;
+      font-size: 30px;
+    }
+  }
+
+  .Home__FooterLogo {
+    max-width: 250px;
+    height: auto;
+  }
+
+  .Home__FooterSocialMedias {
+    display: flex;
+
+    .Home__SocialIcons {
+      padding: 15px;
+      border: 1px solid #4d525a57;
+      margin-right: 15px;
+      border-radius: 50px;
+      color: #252a32;
+      cursor: pointer;
+      transition: 350ms ease;
+    }
+
+    .Home__SocialIcons:hover {
+      background: #7733ff;
+      color: white;
+    }
+  }
+}
+
+@media screen and (max-width: 339px) {
+  .Home__LETSGET {
+    h1 {
+      font-size: 25px !important;
+    }
+
+    p {
+      font-size: 13px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 367px) {
+  .Home__Text_Presentation {
+    .Home__GetStarted {
+      font-size: 12px !important;
+    }
+
+    .Home__LogIn {
+      font-size: 12px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .Home__WhyText {
+    font-size: 30px !important;
+  }
+
+  .Home__firstImage {
+    max-width: 200px !important;
+  }
+
+  .Home__secondImage {
+    max-width: 200px !important;
+  }
+
+  .Home__thirdImage {
+    max-width: 200px !important;
+  }
+
+  .Home__first {
+    h1 {
+      font-size: 15px;
+      max-width: 250px;
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .Home__GridReduce {
+    width: 10px !important;
+  }
+
+  .Home__GetStartedToday {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    h1 {
+      font-size: 50px;
+    }
+  }
+
+  .Home__DeleteGrid {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .Home__GetStartedToday {
+    text-align: center;
+
+    p {
+      font-size: 15px;
+    }
+
+    h1 {
+      font-size: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .Home__FooterLogoInfo {
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .Home__ButtonSignUp {
+    margin-bottom: 20px !important;
+  }
+}
